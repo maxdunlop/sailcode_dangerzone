@@ -35,6 +35,8 @@ void setup() {
     Console->user_function_register( "mon", &umon);
     Console->user_function_register( "serv", &uservo);
     Console->user_function_register( "rc", &urcpollall);
+	Console->user_function_register( "startRC", &ustartRCControl);
+  Console->user_function_register( "help", &uhelp);
 
     uinitRC( NULL );
 }

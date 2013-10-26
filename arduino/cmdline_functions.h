@@ -24,4 +24,6 @@ int uservo(char* argv[]);
 int uinitRC(char* argv[]);
 int urcpollall(char* argv[]);
 int umotorGo(char* argv[]);
+int ustartRCControl(char* argv[]);
+int uhelp(char* argv[]);
 #endif
