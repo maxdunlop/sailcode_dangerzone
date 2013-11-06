@@ -29,8 +29,8 @@ enum PCON_CONTROL {
 };
 
 enum PCON_DIRECTION {
-    PCON_FORWORD,
-    PCON_BACKWORD
+    PCON_FORWARD,
+    PCON_BACKWARD
 };
 
 typedef struct polcore {

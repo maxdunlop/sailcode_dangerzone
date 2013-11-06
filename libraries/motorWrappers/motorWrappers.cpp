@@ -14,7 +14,7 @@ void setMotorSpeed(polcore* motor, int speed) {
 	}
 
 	pconGenMotorGo( motor, pcon_buffer_to_dev, abs(speed),
-					speed>0 ? PCON_FORWORD : PCON_BACKWORD);
+					speed>0 ? PCON_FORWARD : PCON_BACKWARD);
 	pconSendCommandBuffer( motor);
 }
 

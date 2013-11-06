@@ -42,9 +42,9 @@ uint8_t pconGenMotorGo( polcore* dev, uint8_t* buffer,
         pconSendSafe( dev );
     }
 
-    if( direction == PCON_FORWORD ) {
+    if( direction == PCON_FORWARD ) {
         direction_command = 0x05;
-    } else if ( direction == PCON_BACKWORD ) {
+    } else if ( direction == PCON_BACKWARD ) {
         direction_command = 0x06;
     } else {
         // DEBUG Serial --> Invalid command
@@ -68,7 +68,7 @@ uint8_t pconGenMotorGo( polcore* dev, uint8_t* buffer,
 }
 
 uint8_t pconGenMotorStop( polcore* dev, uint8_t* buffer ) {
-    return pconGenMotorGo( dev, buffer, 0x0, PCON_FORWORD );
+    return pconGenMotorGo( dev, buffer, 0x0, PCON_FORWARD );
 }
 
 uint8_t pconGetResponse(polcore* dev, uint8_t* buffer ) {

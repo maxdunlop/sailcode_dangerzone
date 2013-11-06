@@ -49,8 +49,7 @@ int upol(char* argv[]) {
     
     Console->out->printf("POWER: %d\r\n", value );
 
-    pconGenMotorGo( motor, pcon_buffer_to_dev, value, PCON_FORWORD );
-    pconSendCommandBuffer( motor );
+	motorSetSpeed( motor, value );
 }
 
 int umon(char* argv[]) {
